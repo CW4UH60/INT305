@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MilSpecChecklist</string>
+    <string name="milspec_title">Mil-Spec Checklists</string>
+    <string name="milspec_logo">MilSpec Logo</string>
+    <string name="slogan_main">Procedures for everyday life</string>
+    <string name="tab1_text">Household</string>
+    <string name="tab2_text">Kids</string>
+    <string name="tab3_text">Work</string>
+</resources>
