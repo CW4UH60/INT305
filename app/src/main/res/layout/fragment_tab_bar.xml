@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabBar">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tab_Checklist_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#FF9800"
+        android:rotation="-90"
+        android:text="@string/tab1_text"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#0B0000"
+        android:translationX="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="96dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tab_Checklist_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="#4CAF50"
+        android:rotation="-90"
+        android:text="@string/tab2_text"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#0B0000"
+        android:translationX="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_Checklist_1"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="96dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tab_Checklist_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="#2196F3"
+        android:rotation="-90"
+        android:text="@string/tab3_text"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#0B0000"
+        android:translationX="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_Checklist_2"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="96dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tab_Checklist_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="#F3214B"
+        android:rotation="-90"
+        android:text="@string/tab4_text"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#0B0000"
+        android:translationX="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_Checklist_3"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="96dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tab_Checklist_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="#FFEB3B"
+        android:rotation="-90"
+        android:text="@string/tab5_text"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#0B0000"
+        android:translationX="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_Checklist_4"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="96dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tab_Checklist_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#00BCD4"
+        android:rotation="-90"
+        android:text="@string/tab6_text"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#0B0000"
+        android:translationX="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_Checklist_5"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="96dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
