@@ -2,23 +2,18 @@ package com.example.milspecchecklist;
 
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.Navigation;
-import androidx.navigation.fragment.NavHostFragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link TabBar#newInstance} factory method to
+ * Use the {@link fragment_checklist2#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class TabBar extends Fragment implements View.OnClickListener {
+public class fragment_checklist2 extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -29,7 +24,7 @@ public class TabBar extends Fragment implements View.OnClickListener {
     private String mParam1;
     private String mParam2;
 
-    public TabBar() {
+    public fragment_checklist2() {
         // Required empty public constructor
     }
 
@@ -39,11 +34,11 @@ public class TabBar extends Fragment implements View.OnClickListener {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment TabBar.
+     * @return A new instance of fragment fragment_checklist2.
      */
     // TODO: Rename and change types and number of parameters
-    public static TabBar newInstance(String param1, String param2) {
-        TabBar fragment = new TabBar();
+    public static fragment_checklist2 newInstance(String param1, String param2) {
+        fragment_checklist2 fragment = new fragment_checklist2();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -64,26 +59,6 @@ public class TabBar extends Fragment implements View.OnClickListener {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_tab_bar, container, false);
-
-
-
-        Button b1 = v.findViewById(R.id.tab_Checklist_1);
-        b1.setOnClickListener(this);
-        Button b2 = v.findViewById(R.id.tab_Checklist_2);
-        b2.setOnClickListener(this);
-        return v;
-    }
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.tab_Checklist_1:
-            Navigation.findNavController(v).navigate(R.id.action_fragment_main_to_fragment_checklist1);
-            break;
-            case R.id.tab_Checklist_2:
-            Navigation.findNavController(v).navigate(R.id.action_fragment_main_to_fragment_checklist2);
-            break;
-        }
+        return inflater.inflate(R.layout.fragment_checklist2, container, false);
     }
 }
-
