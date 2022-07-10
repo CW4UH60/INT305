@@ -3,33 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fragnav"
-    app:startDestination="@id/fragment_checklist1">
+    app:startDestination="@id/fragment_main">
     <fragment
         android:id="@+id/fragment_main"
         android:name="com.example.milspecchecklist.fragment_main"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" >
+        tools:layout="@layout/fragment_main_activity" >
         <action
-            android:id="@+id/action_fragment_main_to_fragment_checklist1"
-            app:destination="@id/fragment_checklist1" />
-        <action
-            android:id="@+id/action_fragment_main_to_fragment_checklist2"
-            app:destination="@id/fragment_checklist2" />
+            android:id="@+id/action_fragment_main_to_listView"
+            app:destination="@id/listView" />
     </fragment>
-    <fragment
-        android:id="@+id/fragment_checklist1"
-        android:name="com.example.milspecchecklist.fragment_checklist1"
-        android:label="fragment_checklist1"
-        tools:layout="@layout/fragment_checklist1" >
-        <argument
-            android:name="Checklist1Arg"
-            app:argType="string"
-            app:nullable="true"
-            android:defaultValue="@null" />
-    </fragment>
-    <fragment
-        android:id="@+id/fragment_checklist2"
-        android:name="com.example.milspecchecklist.fragment_checklist2"
-        android:label="fragment_checklist2"
-        tools:layout="@layout/fragment_checklist2" />
+    <activity
+        android:id="@+id/listView"
+        android:name="com.example.milspecchecklist.ListView"
+        android:label="activity_list_view"
+        tools:layout="@layout/activity_list_view" />
+    <action android:id="@+id/action_global_fragment_main" app:destination="@id/fragment_main" />
+    <action android:id="@+id/action_global_activity_listview" app:destination="@id/listView"/>
 </navigation>

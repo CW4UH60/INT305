@@ -66,7 +66,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView_Title" />
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragment_TabBar_Reset"
+        android:id="@+id/fragment_TabBar"
         android:name="com.example.milspecchecklist.TabBar"
         android:layout_width="107dp"
         android:layout_height="640dp"

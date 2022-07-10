@@ -65,9 +65,6 @@ public class TabBar extends Fragment implements View.OnClickListener {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_tab_bar, container, false);
-
-
-
         Button b1 = v.findViewById(R.id.tab_Checklist_1);
         b1.setOnClickListener(this);
         Button b2 = v.findViewById(R.id.tab_Checklist_2);
@@ -78,10 +75,10 @@ public class TabBar extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.tab_Checklist_1:
-            Navigation.findNavController(v).navigate(R.id.action_fragment_main_to_fragment_checklist1);
+            // Need to add navigation below.
+            Navigation.findNavController(v).navigate(R.id.action_global_activity_listview);
             break;
             case R.id.tab_Checklist_2:
-            Navigation.findNavController(v).navigate(R.id.action_fragment_main_to_fragment_checklist2);
             break;
         }
     }

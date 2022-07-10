@@ -27,9 +27,15 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+
     def nav_version = "2.5.0"
 
     // Java language implementation
@@ -48,6 +54,9 @@ dependencies {
 
     // Jetpack Compose Integration
     implementation "androidx.navigation:navigation-compose:$nav_version"
+
+    // Adds the round image view for the checklists, must also add a new source to Project build.gradle
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 
     implementation 'androidx.appcompat:appcompat:1.4.2'
     implementation 'com.google.android.material:material:1.6.1'
