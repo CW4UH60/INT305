@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragnav"
+    app:startDestination="@id/fragment_checklist1">
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="com.example.milspecchecklist.fragment_main"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_fragment_main_to_fragment_checklist1"
+            app:destination="@id/fragment_checklist1" />
+        <action
+            android:id="@+id/action_fragment_main_to_fragment_checklist2"
+            app:destination="@id/fragment_checklist2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_checklist1"
+        android:name="com.example.milspecchecklist.fragment_checklist1"
+        android:label="fragment_checklist1"
+        tools:layout="@layout/fragment_checklist1" >
+        <argument
+            android:name="Checklist1Arg"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_checklist2"
+        android:name="com.example.milspecchecklist.fragment_checklist2"
+        android:label="fragment_checklist2"
+        tools:layout="@layout/fragment_checklist2" />
+</navigation>
