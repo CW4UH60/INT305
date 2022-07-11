@@ -24,12 +24,12 @@ public class UserActivity extends AppCompatActivity {
             String name = intent.getStringExtra("name");
             String phone = intent.getStringExtra("phone");
             String country = intent.getStringExtra("country");
-            int imageid = intent.getIntExtra("iamgeid",R.drawable.logo_1);
+            int imageId = intent.getIntExtra("imageId",R.drawable.logo_1);
 
             binding.nameProfile.setText(name);
             binding.phoneProfile.setText(phone);
             binding.detailsProfile.setText(country);
-            binding.profileImage.setImageResource(imageid);
+            binding.profileImage.setImageResource(imageId);
         }
 
     }
