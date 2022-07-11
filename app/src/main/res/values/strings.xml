@@ -11,4 +11,13 @@
     <string name="tab6_text">Vehicles</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_name">Disney Trip</string>
+    <string name="default_details">Details about trip</string>
+    <string name="default_date">27 July</string>
+    <string name="checklist_name">Checklist Name</string>
+    <string name="name_of_checklist">Name of Checklist</string>
+    <string name="sub_items">Sub-items</string>
+    <string name="sub_details">Sub-details</string>
+    <string name="default_details_go_here">Details go here.</string>
+    <string name="default_lots_of_details">Lots of details go here.</string>
 </resources>
